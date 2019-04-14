@@ -18,6 +18,6 @@ Requires an "extended" Hugo version.
 cp -R public /srv/righttobeoffensive.com/src/public
 ```
 
-Or something similar.  There's probably also something to do with sourcemaps buy I don't quite understand that yet.
+Or something similar.  There's probably also something to do with sourcemaps but I don't quite understand that yet.
 
 I don't know why I'm writing this bit.  Are you going to mirror my site?  That's weird.  Please tell me why.
