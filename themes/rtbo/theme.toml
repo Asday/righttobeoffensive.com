@@ -1,6 +1,6 @@
 name = "rtbo"
 license = "MIT"
-licenselink = "https://righttobeoffensive.com/LICENSE.md"
+licenselink = "https://github.com/Asday/righttobeoffensive.com/blob/master/LICENSE.md"
 description = "Minimalistic theme based on m10c."
 homepage = "https://righttobeoffensive.com/"
 tags = ["blog", "minimalistic", "minimal", "responsive", "dark"]
