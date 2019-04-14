@@ -1,0 +1,95 @@
+.app-header {
+  position: fixed;
+  background-color: $dark_color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+
+  padding: 1em;
+}
+
+.app-header-title {
+  margin: 0;
+
+  &.non-mobile {
+    display: none;
+  }
+}
+
+.app-header-menu {
+  align-self: flex-end;
+}
+
+.app-header-navs {
+  flex-direction: row;
+  flex-grow: 1;
+  flex-basis: 100%;
+  align-items: center;
+}
+
+.app-header-sections > ol {
+  padding-left: 1.5em;
+}
+
+.app-header-social {
+  margin-right: 1em;
+}
+
+.app-header-avatar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .app-header {
+    height: 100vh;
+    width: $desktop-sidebar-width;
+    overflow: hidden;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .app-header-title {
+    &.non-mobile {
+      display: flex;
+    }
+    &.mobile {
+      display: none;
+    }
+  }
+
+  .app-header-menu {
+    display: none;
+  }
+
+  .app-header-menu-toggler + div {
+    // This is `.app-header-navs`, but that's not specific enough.  :(
+    display: flex;
+  }
+  .app-header-navs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app-header-social {
+    margin-bottom: 1em
+  }
+
+  .app-header-avatar {
+    display: flex;
+    width: 100%;
+    margin-bottom: $avatar-bottom-offset;
+    margin-left: $avatar-left-offset;
+    align-self: center;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+
+    &:hover {
+      margin-bottom: 0;
+    }
+  }
+}

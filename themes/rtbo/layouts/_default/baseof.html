@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      {{- .Title }}{{ if not .IsHome }} &mdash; {{ .Site.Title }}{{ end -}}
+    </title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo {{ .Hugo.Version }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{ if .Site.Params.author -}}
+      <meta name="author" content="{{ .Site.Params.author }}" />
+    {{ end -}}
+    <meta
+      name="description"
+      {{ if .IsHome -}}
+        content="{{ .Site.Params.description }}"
+      {{- else -}}
+        content="{{ .Description }}"
+      {{- end }}
+    />
+    <base href="{{ .Site.BaseURL }}" />
+    {{ $style := resources.Get "css/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | resources.ToCSS (dict "enableSourceMap" true) | resources.Fingerprint -}}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/">
+        <h1 class="app-header-title mobile">
+          {{- replace .Site.Params.headerTitle "\n" " " -}}
+        </h1>
+        <h1 class="app-header-title non-mobile">
+          {{- replace .Site.Params.headerTitle "\n" "<br />" | safeHTML -}}
+        </h1>
+      </a>
+
+      <label for="appHeaderToggle" class="app-header-menu">
+        {{- partial "icon.html" (dict "ctx" $ "name" "menu") -}}
+      </label>
+      <input
+        id="appHeaderToggle"
+        class="toggle app-header-menu-toggler"
+        type="checkbox"
+      />
+      <div class="app-header-navs">
+        <nav>
+          <ol>
+            {{ range where .Site.Sections "Dir" "!=" "" }}
+              <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+            {{ end }}
+          </ol>
+        </nav>
+
+        <div class="spacer"></div>
+
+        <nav class="app-header-social">
+          {{ range .Site.Params.social }}
+            <a target="_blank" href="{{ .url }}">
+              {{- partial "icon.html" (dict "ctx" $ "name" .name) -}}
+            </a>
+          {{ end }}
+        </nav>
+      </div>
+      {{ if .IsHome -}}
+        <img
+          class="app-header-avatar"
+          src="https://static.righttobeoffensive.com/i/avatar.png"
+        />
+      {{ end -}}
+    </header>
+    <div class="app-wrapper">
+      {{- $isContent := (or .Page.IsPage .Page.Params.standalone) -}}
+      <main class="app-container{{ if $isContent }} content{{ end }}">
+        {{ block "main" . }}
+          {{ .Content }}
+        {{ end }}
+      </main>
+    </div>
+  </body>
+</html>

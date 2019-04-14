@@ -1,0 +1,83 @@
+.list-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1em;
+}
+
+.card-link {
+  color: unset;
+
+  &:hover {
+    color: unset;
+    & .card-heading {
+      background-color: unset;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $dark-color;
+  width: 15em;
+  height: 21em;
+
+  margin-right: 1em;
+  margin-top: 1em;
+
+  & > * {
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+
+    &.spacer {
+      padding: 0;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 0.5em;
+  }
+
+  & p {
+    margin: 0;
+  }
+}
+
+.card-image {
+  padding: 0;
+  width: 15em;
+  height: 8.25em;
+
+  object-fit: cover;
+}
+
+.card-heading {
+  display: block;
+  background-color: $dark-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  padding-bottom: 0.5em;
+
+  & h2 {
+    margin: 0;
+    font-size: 1em;
+  }
+  & > time {
+    float: right;
+    white-space: nowrap;
+    margin-left: 1em;
+  }
+}
+
+.card-summary {
+  color: $primary-color;
+}
+
+.card-updated {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

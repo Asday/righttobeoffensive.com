@@ -1,0 +1,25 @@
+<a class="card-link" href="{{ .Permalink }}">
+  <article class="card">
+    <section class="card-heading">
+      <h2>{{ .Title }}</h2>
+    </section>
+
+    <img
+      class="card-image"
+      src="{{ .Params.header_image }}"
+      alt="post header"
+    />
+
+    <div class="spacer"></div>
+
+    <section class="card-summary">
+      {{ .Summary }}
+    </section>
+    <section class="card-updated">
+      <span>Updated last:</span>
+      <time datetime="{{ .PublishDate }}">
+        {{- .PublishDate.Format "2006-01-02" -}}
+      </time>
+    </section>
+  </article>
+</a>

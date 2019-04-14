@@ -1,0 +1,16 @@
+name = "rtbo"
+license = "MIT"
+licenselink = "https://righttobeoffensive.com/LICENSE.md"
+description = "Minimalistic theme based on m10c."
+homepage = "https://righttobeoffensive.com/"
+tags = ["blog", "minimalistic", "minimal", "responsive", "dark"]
+features = [
+  "minimalistic blog",
+  "social icons",
+  "editable colors"
+]
+min_version = 0.43
+
+[author]
+  name = "Asday"
+  homepage = "https://righttobeoffensive.com"

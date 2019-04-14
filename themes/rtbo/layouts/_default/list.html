@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <article>
+    <section class="list-content">
+      {{ .Page.Content }}
+    </section>
+    <section class="list-items">
+      {{ range .Pages }}
+        {{ partial "card.html" . }}
+      {{ end }}
+    </section>
+  </article>
+{{ end }}

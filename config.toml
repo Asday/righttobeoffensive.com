@@ -1,0 +1,30 @@
+baseURL = "https://righttobeoffensive.com/"
+languageCode = "en-gb"
+title = "Right to be Offensive"
+theme = "rtbo"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+enableEmoji = true
+pygmentsCodefences = true
+pygmentsStyle = "rrt"
+
+[params]
+description = "Asdf"
+author = "Adam Barnes"
+headerTitle = "Right\nto be\nOffensive"
+
+[params.style]
+darkestColor = "#211911"
+darkColor = "#463625"
+primaryColor = "#EE6AAC"
+lightColor = "#F9C6E0"
+lightestColor = "#ffffff"
+avatarBottomOffset = "-8em"
+avatarLeftOffset = "-8em"
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/asday"
+[[params.social]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/adam-barnes-30a1146a/"
