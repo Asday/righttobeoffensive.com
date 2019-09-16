@@ -3,6 +3,7 @@ languageCode = "en-gb"
 title = "Right to be Offensive"
 theme = "rtbo"
 disableKinds = ["taxonomy", "taxonomyTerm"]
+enableRobotsTXT = true
 
 enableEmoji = true
 pygmentsCodefences = true
