@@ -6,7 +6,7 @@ draft: false
 weight: 1
 ---
 
-The world is mad.  One can no longer have a casual conversation with friends without fear of social retribution for the grand crime of being offensive, the arbiters of which see themselves as so good.
+The world has gone mad.  One can no longer have a casual conversation with friends without fear of social retribution for the grand crime of being offensive, the arbiters of which see themselves as so good.
 
 <!--more-->
 
