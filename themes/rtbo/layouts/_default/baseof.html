@@ -15,7 +15,7 @@
       {{ if .IsHome -}}
         content="{{ .Site.Params.description }}"
       {{- else -}}
-        content="{{ .Description }}"
+        content="{{ .Summary }}"
       {{- end }}
     />
     <base href="{{ .Site.BaseURL }}" />
