@@ -1,15 +1,19 @@
 {{ define "main" }}
   <article>
-    {{ if .IsHome }}
-      <section class="list-items">
-        {{ range .Site.RegularPages }}
-          {{ partial "card.html" . }}
-        {{ end }}
-      </section>
-    {{ else }}
-      <section class="list-content">
-        {{ .Page.Content }}
-      </section>
-    {{ end }}
+    <section class="list-content">
+      {{ .Page.Content }}
+    </section>
+    <section class="list-items">
+      {{- $pages := "" -}}
+      {{ if .IsHome }}
+        {{- $pages = .Site.RegularPages -}}
+      {{ else }}
+        {{- $pages = .Pages -}}
+      {{ end }}
+
+      {{ range $pages }}
+        {{ partial "card.html" . }}
+      {{ end }}
+    </section>
   </article>
 {{ end }}
