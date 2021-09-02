@@ -5,7 +5,7 @@
       {{- .Title }}{{ if not .IsHome }} &mdash; {{ .Site.Title }}{{ end -}}
     </title>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo {{ .Hugo.Version }}" />
+    <meta name="generator" content="Hugo {{ hugo.Version }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {{ if .Site.Params.author -}}
       <meta name="author" content="{{ .Site.Params.author }}" />
