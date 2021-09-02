@@ -44,7 +44,7 @@
       <div class="app-header-navs">
         <nav>
           <ol>
-            {{ range where .Site.Sections "Dir" "!=" "" }}
+            {{ range where .Site.Sections "Pages.Len" "==" 0 }}
               <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
             {{ end }}
           </ol>
