@@ -80,8 +80,8 @@ img {
     display: none;
   }
 
-    display: flex;
   &:checked + * {
+    display: block;
   }
 }
 
