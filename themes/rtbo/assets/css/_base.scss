@@ -76,12 +76,12 @@ img {
 .toggle {
   display: none;
 
-  & + div {
+  & + * {
     display: none;
   }
 
-  &:checked + div {
     display: flex;
+  &:checked + * {
   }
 }
 
