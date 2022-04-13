@@ -11,7 +11,7 @@
         {{- $pages = .Pages -}}
       {{ end }}
 
-      {{ range $pages.Reverse }}
+      {{ range $pages.ByDate.Reverse }}
         {{ partial "card.html" . }}
       {{ end }}
     </section>
