@@ -1,0 +1,17 @@
+{{ $requiredArgs := (slice "id" "title") }}
+
+{{ range $requiredArgs }}
+  {{ with ($.Get .) }}{{ else }}{{ errorf "missing argument %s" . }}{{ end }}
+{{ end }}
+
+<label for="{{ .Get `id` }}Toggle">
+  {{ .Get "title" }}
+</label>
+<input
+  id="{{ .Get `id` }}Toggle"
+  class="toggle"
+  type="checkbox"
+/>
+<section>
+  {{ .Inner | markdownify | safeHTML }}
+</section>
