@@ -11,4 +11,4 @@ weight: 1
 * Every individual has an obligation to be responsible for their own feelings;
 * Common courtesy, and the definition thereof, is an interpersonal matter.
 
-[Read more...](/posts/right-to-be-offensive)
+[Read more...]({{< ref "right-to-be-offensive" >}})
