@@ -23,10 +23,10 @@ I grew up as introverts do, turning to computers (and games).  I assumed program
 
 I moved quickly on from that to Python2 where I stayed until it was reasonable to use Python3.  Once I had a job in the industry, it became apparent knowing _only_ Python wasn't quite good enough, and I picked up supporting skills for web development.
 
-If you're looking for a Python or React tutor, [hit me up](/contact).  I'm always interested in teaching.
+If you're looking for a Python or React tutor, [hit me up]({{< ref "contact" >}}).  I'm always interested in teaching.
 
 My favourite anime are [Hibike! Euphonium](https://www.crunchyroll.com/sound-euphonium), and [Code GEASS](https://www.hulu.com/series/code-geass-1858aace-a7fb-4d6f-b770-61dc121185b4).  My favourite films are the [Matrix](https://www.imdb.com/title/tt0133093/?ref_=fn_al_tt_1) trilogy.  My favourite music changes by the second, (but [GYARI](https://www.youtube.com/watch?v=czizBiAhHiI) is doing well at the moment).
 
 # How can I tell you how much I hate you?
 
-Reasonable contact details are over at [contact](/contact) in the sidebar, and this site is reposited<sup>?</sup> at [github](https://github.com/asday/righttobeoffensive.com), where you can crack open an issue or a pull request should the fancy strike you.
+Reasonable contact details are over at [contact]({{< ref "contact" >}}) in the sidebar, and this site is reposited<sup>?</sup> at [github](https://github.com/asday/righttobeoffensive.com), where you can crack open an issue or a pull request should the fancy strike you.
