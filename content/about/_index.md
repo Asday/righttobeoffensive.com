@@ -27,6 +27,8 @@ If you're looking for a Python or React tutor, [hit me up]({{< ref "contact" >}}
 
 My favourite anime are [Hibike! Euphonium](https://www.crunchyroll.com/sound-euphonium), and [Code GEASS](https://www.hulu.com/series/code-geass-1858aace-a7fb-4d6f-b770-61dc121185b4).  My favourite films are the [Matrix](https://www.imdb.com/title/tt0133093/?ref_=fn_al_tt_1) trilogy.  My favourite music changes by the second, (but [GYARI](https://www.youtube.com/watch?v=czizBiAhHiI) is doing well at the moment).
 
+Since late 2019, I have been particularly interested in VTubers.  My favourite is [角巻わため (Tsunomaki Watame)](https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA) by far, following behind her is everyone else in hololive, a couple from Nijisanji, and a lot of indies.  From them I've [learnt the Japanese that I know so far]({{< ref "on-language" >}}), which isn't much, but it's also not nothing.
+
 # How can I tell you how much I hate you?
 
 Reasonable contact details are over at [contact]({{< ref "contact" >}}) in the sidebar, and this site is reposited<sup>?</sup> at [github](https://github.com/asday/righttobeoffensive.com), where you can crack open an issue or a pull request should the fancy strike you.
