@@ -6,8 +6,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = true
 
 enableEmoji = true
-pygmentsCodefences = true
-pygmentsStyle = "rrt"
 
 [params]
 description = "Personal homepage for Adam Barnes.  Personal.  As in - \"don't go harassing my employers for something you read here\"."
@@ -23,9 +21,19 @@ lightestColor = "#ffffff"
 avatarBottomOffset = "-8em"
 avatarLeftOffset = "-8em"
 
+codeNames = "#DC474E"
+codeLiterals = "#B2A7A2"
+codeBuiltins = "#D8DEC6"
+codeKeywords = "#B03B50"
+codeComments = "#8D7889"
+
 [[params.social]]
   name = "github"
   url = "https://github.com/asday"
 [[params.social]]
   name = "linkedin"
   url = "https://www.linkedin.com/in/adam-barnes-30a1146a/"
+
+[markup]
+[markup.highlight]
+noClasses = false
