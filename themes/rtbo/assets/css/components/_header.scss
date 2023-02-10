@@ -8,6 +8,10 @@
   width: 100%;
 
   padding: 1em;
+
+  @media print {
+    display: none;
+  }
 }
 
 .app-header-title {
@@ -51,6 +55,10 @@
 
     padding-bottom: 0;
     padding-right: 0;
+
+    @media print {
+      display: none;
+    }
   }
 
   .app-header-title {

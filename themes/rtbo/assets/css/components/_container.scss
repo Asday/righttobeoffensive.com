@@ -12,6 +12,10 @@
 
   // 4em for the header, and a mystery .5em?
   margin-top: 4.5em;
+
+  @media print {
+    margin-top: 0;
+  }
 }
 
 .app-container.content {
@@ -22,10 +26,16 @@
   .app-container {
     margin-left: $desktop-sidebar-width;
     margin-top: 0;
+
+    @media print {
+      margin-left: 0;
+    }
   }
 
   .app-container.content {
-    max-width: calc(64em - #{$desktop-sidebar-width});
-    width: 64em;
+    @media screen {
+      max-width: calc(64em - #{$desktop-sidebar-width});
+      width: 64em;
+    }
   }
 }

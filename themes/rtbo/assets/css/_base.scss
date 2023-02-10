@@ -88,6 +88,17 @@ img {
   }
 }
 
+.contact-block {
+  line-height: 0;
+  text-align: right;
+}
+
+@media screen {
+  .print-show {
+    display: none;
+  }
+}
+
 @media (min-width: $break-width) {
   body {
     flex-direction: row;
@@ -114,5 +125,30 @@ img {
 
   pre {
     overflow: unset;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0;
+  }
+
+  p {
+    text-align: justify;
+    break-inside: avoid;
+  }
+
+  .contact-block {
+    * {
+      text-align: right;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    break-after: avoid;
+  }
+
+  .print-hide {
+    display: none;
   }
 }
