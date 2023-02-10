@@ -1,0 +1,9 @@
+{{ $requiredArgs := (slice "class") }}
+
+{{ range $requiredArgs }}
+  {{ with ($.Get .) }}{{ else }}{{ errorf "missing argument %s" . }}{{ end }}
+{{ end }}
+
+<section class="{{ .Get `class` }}">
+  {{ .Inner | markdownify | safeHTML }}
+</section>
