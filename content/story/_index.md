@@ -5,6 +5,7 @@ standalone: true
 weight: 3
 ---
 
+{{< sectionClass class="print-hide" >}}
 # Developer story
 
 God rest the developer story.  We [welcomed](https://meta.stackoverflow.com/questions/313960/introducing-the-developer-story) you with as much enthusiasm as we [waved you goodbye](https://meta.stackoverflow.com/questions/415293/sunsetting-jobs-developer-story).  Got me a couple of my best jobs too.
@@ -16,6 +17,21 @@ Well, the lesson learnt is to never rely on anything you don't directly control.
 Details are correct at the time of writing - generally during the date range listed in the heading.  Work that I have done can cease to be available at any time, I generally can't control that.  Tenses have been changed over time to read more naturally.
 
 ---
+{{< /sectionClass >}}
+
+{{< sectionClass class="print-show contact-block" >}}
+**Adam Barnes**
+
+&nbsp;
+
+Sowerby Bridge
+
+United Kingdom
+
+&nbsp;
+
+sara.and.zuka@gmail.com
+{{< /sectionClass >}}
 
 ## Profile
 
@@ -25,7 +41,7 @@ I'm driven by helping others, whether directly by teaching them, or indirectly b
 
 I like to think I possess excellent written and spoken English skills, and I know for a fact I'm a complete beginner at Japanese, though my Japanese friends always say I'm very good indeed.  One of them said I could easily be a translator, so I know they're blowing smoke, but I still appreciate it.
 
-In my own time I play competitive video games at a non-competitive level, (except Atomic Chess I guess, where I rank around top 10%), practice piano way too little, and bake bread.  I also have a cat that hates me, which is pretty cool.
+In my own time I play competitive video games at a non-competitive level, (except Atomic Chess I guess, where I rank around top 10%), practice piano and guitar way too little, and bake bread.  I also have a cat that hates me, which is pretty cool.
 
 **Expert in**:  Python; Django.
 
@@ -80,6 +96,11 @@ Towards the end of my stint, I also developed several Python programs, some to a
 
 ---
 
+{{< sectionClass class="print-show" >}}
+Please find a detailed breakdown of my projects on the online version of my [developer story]({{< ref "story" >}}).
+{{< /sectionClass >}}
+
+{{< sectionClass class="print-hide" >}}
 ## Projects
 
 Projects marked with an asterisk were personal projects entirely separate from my employer(s) at the time.  As you might imagine, the further back in time you read, the less impressive and relevant the projects might be, so feel free to stop whenever.  I won't judge.
@@ -481,3 +502,4 @@ I wrote a pair of small scripts that watched some folders I created on the netwo
 ### *Age 13, Began teaching myself programming
 
 Beginning with a tutorial in an issue of Computer Shopper on VB.NET, and quickly evolving into several online Python tutorials, my self-initiated journey into software began.
+{{< /sectionClass >}}
