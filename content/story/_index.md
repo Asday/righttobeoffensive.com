@@ -107,6 +107,14 @@ Projects marked with an asterisk were personal projects entirely separate from m
 
 Since starting at JP74 (Mar 2016), all of my non-personal work has been PR'd, and I have also had PRs to do as a regular part of working life.  It's not interesting so I don't mention it hereafter.
 
+### *Aug 2022, Django Base
+
+Starting in August, and spurred by spinning up several small Django projects, I wrote a Django project template utilising `docker-compose` and including Django, the asynchronous task runner Celery (and scheduled task runner `beat`), mailpit to trap emails, Redis for caching and message passing, PostgreSQL as a backing store, nginx with SSL as a web server, testing and linting, and Flower for monitoring Celery tasks.
+
+For added convenience, `direnv` is used to configure the project and to add the project scripts (including install scripts) to `$PATH`, and shell completions are included for `manage.py`.
+
+As an ever-evolving project, I've yet to get around to publishing it.  At the time of writing, I'm partway through a DAG-based permission structure with closure tables to store the graphs.
+
 ### Apr 2022, Eee maintenance
 
 From the beginning of my employment at my current employer, general maintenance of Eee has been a constancy.  This has involved but isn't limited to: responding to and investigating user support tickets (which often require code changes); upgrading of Django and other libraries, changing the database schema and dealing with migrations; fixing and improving the test suite; linting the project; authoring developer conveniences; and refactoring out general insanity as and when possible.
