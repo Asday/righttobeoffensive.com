@@ -137,7 +137,7 @@ There was little-to-no employee nor leadership buy-in, so all the time I spent h
 
 The data structure and form description is all very static for a business reason that turned out to not matter at all, making changes many times more difficult than they need to be for no benefit.  Delivering the desired data shape from Eee as a JSON schema would have been infinitely preferable.
 
-There were a great many awkward and annoying hoops through which I had to jump to use Expo that wouldn't have been the case had I made the (scary) decision to learn Swift or Objective-C instead.  One example is that Expo holds the keys bundling and distribution themselves, so you're forced to stay on SDK versions they support, which keep changing and deprecating/removing features my admittedly simple app relied on.
+There were a great many awkward and annoying hoops through which I had to jump to use Expo that wouldn't have been the case had I made the (scary) decision to learn Swift or Objective-C instead.  One example is that Expo holds the keys to bundling and distribution themselves, so you're forced to stay on SDK versions they support, which keep changing and deprecating/removing features my admittedly simple app relied on.
 
 The docs I wrote for the store, while nice, are essentially a weird reinvention of TypeScript without any of the good features like transpiler static checking.  I avoided using TypeScript because I was apprehensive that I should be delivering a product rather than learning new things.
 
@@ -217,7 +217,7 @@ The [Egencia website](https://www.egencia.com/en/) was a highly-available load-b
 
 Regrettably, we encountered some issues with the previous deployment, which was in-place.  I researched the issue, and could so no reason not to switch to blue-green deployments.  The main reason to switch besides fixing the deployment issue, was the ability to privately inspect the instances before switching traffic to them and destroying the old instances.
 
-This allowed us to safely have an internal check of new features after deployment to staging, and also allowed for no chance for an instance to become overloaded during a traffic spice coinciding with deployment.
+This allowed us to safely have an internal check of new features after deployment to staging, and also allowed for no chance for an instance to become overloaded during a traffic spike coinciding with deployment.
 
 It also meant we could never fail a deployment and put ourselves in a halfway state.
 
@@ -247,7 +247,7 @@ This went through several iterations, until we came upon a system which was so r
 
 I achieved this by spawning a task to determine which groups needed billing, which spawns tasks that create intent objects in the database for each group to bill.  Next, billing dates were updated, and another process picked up the intents, creating further intents to create invoices, and so on, until a task at the end of the waterfall picked up an invoice, and enacts it.
 
-Each intent and invoice could be acted upon independently, and as such were fully concurrent, meaning we could scale up our Celery workers to any amount up to `n`, and get the billin done on time.
+Each intent and invoice could be acted upon independently, and as such were fully concurrent, meaning we could scale up our Celery workers to any amount up to `n`, and get the billing done on time.
 
 The project was never released for business reasons.
 
