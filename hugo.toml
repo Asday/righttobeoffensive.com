@@ -2,14 +2,14 @@ baseURL = "https://righttobeoffensive.com/"
 languageCode = "en-gb"
 title = "Right to be Offensive"
 theme = "rtbo"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 enableRobotsTXT = true
 
 enableEmoji = true
 
 [params]
 description = "Personal homepage for Adam Barnes.  Personal.  As in - \"don't go harassing my employers for something you read here\"."
-author = "Adam Barnes"
+authorName = "Adam Barnes"
 headerTitle = "Right\nto be\nOffensive"
 
 [params.style]
