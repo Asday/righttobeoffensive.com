@@ -570,7 +570,7 @@ From where I started counting I forget, but my journey back home started at 18:3
 
 ---
 
-I woke up much too early and brushed my teeth in the bathroom with some bottle water, and learned that fun is banned in KIX.
+I woke up much too early and brushed my teeth in the bathroom with some bottled water, and learned that fun is banned in KIX.
 
 ![No fun allowed in Kansai](https://static.righttobeoffensive.com/i/jp/0/087.jpg)
 
