@@ -1,0 +1,17 @@
+.tableOfContents {
+    width: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-style: solid;
+    border-width: 0.1em;
+
+    background: $dark-color;
+
+    & ul {
+        padding-left: 0;
+        list-style: none;
+    }
+    & a {
+        color: $lightest-color;
+    }
+}

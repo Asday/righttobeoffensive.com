@@ -21,7 +21,7 @@
     <base href="{{ .Site.BaseURL }}" />
     {{ $mainscss := resources.Get "css/main.scss" -}}
     {{ $rendered := $mainscss | resources.ExecuteAsTemplate "css/main.scss" . -}}
-    {{ $css := $rendered | resources.ToCSS (dict "enableSourceMap" true) -}}
+    {{ $css := $rendered | css.Sass (dict "enableSourceMap" true) -}}
     {{ $style := $css | resources.Fingerprint -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
   </head>

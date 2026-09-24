@@ -31,4 +31,4 @@ Since late 2019, I have been particularly interested in VTubers.  My favourite i
 
 # How can I tell you how much I hate you?
 
-Reasonable contact details are over at [contact]({{< ref "contact" >}}) in the sidebar, and this site is reposited<sup>?</sup> at [github](https://github.com/asday/righttobeoffensive.com), where you can crack open an issue or a pull request should the fancy strike you.
+Reasonable contact details are over at [contact]({{< ref "contact" >}}) in the sidebar, and this site is reposited^?^ at [github](https://github.com/asday/righttobeoffensive.com), where you can crack open an issue or a pull request should the fancy strike you.
